@@ -1,0 +1,26 @@
+h1 {
+    color: blue;
+}
+
+h2 {
+    color: rgb(0,255,0);
+    font-family: "궁서체";
+}
+
+span {
+    color: #f00;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+}
+
+p {
+    font-family: "고딕체";
+    line-height: 2;
+}
+
+a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #000000;
+}

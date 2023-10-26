@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블 - 수직 정렬</title>
+    <style>
+        table {
+            border: 1px solid #ccc;
+        }
+        td {
+            border: 1px solid #ccc;
+            width: 150px;
+            height: 100px;
+            text-align: center;
+        }
+        /* 셀의 수직 정렬 */
+        .va1{
+            vertical-align: top;
+        }
+        .va2 {
+            vertical-align: middle;
+        }
+        .va3 {
+            vertical-align: bottom;
+        }
+        /* 선태가 id는 #을 붙여 호출 */
+        #cap_top{
+            /* 바깥 여백(아래쪽) */
+            margin-bottom: 10px;
+            /* 캡션 위치(위쪽) */
+            caption-side: top;
+        }
+        #cap_bottom {
+            /* 바깥 여백(위쪽) */
+            margin-top: 10px;
+            /* 캡션 위치(아래쪽) */
+            caption-side: bottom;
+        }
+    </style>
+</head>
+<body>
+    <!-- 캡션<caption> : 표의 설명 -->
+    <table>
+        <!-- 선택자 id = 유일한 것을 선택할 때 사용 -->
+        <caption id="cap_top">수직 정렬 (vertical-align)</caption>
+        <tr>
+            <td class="va1">alinement</td>
+            <td class="va2">alinement</td>
+            <td class="va3">alinement</td>
+        </tr>
+    </table>
+    <hr>
+    <table>
+        <tr>
+            <td class="va1">alinement</td>
+            <td class="va2">alinement</td>
+            <td class="va3">alinement</td>
+        </tr>
+        <caption id="cap_bottom">수직 정렬 (vertical-align)</caption>
+
+    </table>
+</body>
+</html>

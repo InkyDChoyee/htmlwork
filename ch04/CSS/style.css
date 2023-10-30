@@ -1,0 +1,35 @@
+/* 상단 메뉴 만들기 */
+body {
+    margin: 0px;
+}
+
+ul {
+    list-style: none;
+    margin: 0px;
+}
+
+ul li {
+    /* inline사용시 margin 적용 안됨  */
+    display: inline-block;
+    margin: 16px;
+    border-top: 3px solid #222;
+    padding: 10px 0px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul li:hover {
+    background-color: #eee;
+}
+
+ul li a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+section h1 {
+    margin-left: 20px;
+}

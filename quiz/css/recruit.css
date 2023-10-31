@@ -1,0 +1,50 @@
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #02233b;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#container {
+    background-color: white;
+    border: 1px solid 02233b;
+    margin: 0% 5%;
+}
+
+h1 {
+    text-align: center;
+    background-color: #004344;
+    color: white;
+    margin: 0px 20px;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    font-style: italic;
+}
+
+#bg {
+    padding: 0;
+    margin: 0px;
+    width: 100%;
+    height: 410px;
+    background: url(/quiz/images/mic.png) no-repeat right bottom;
+}
+
+p {
+    color: orange;
+    font-weight: bold;
+    margin: 50px 15px 15px 15px;
+}
+
+ul {
+    margin: 0px 30px;
+    list-style: none;
+}

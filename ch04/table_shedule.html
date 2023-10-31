@@ -22,12 +22,21 @@
         caption{
             margin-bottom: 10px;
         }
+        .bg {
+            background-color: cadetblue;
+            padding: 10px 30px;
+        }
     </style>
 
 </head>
 <body>
     <table>
         <caption>프로축구 경기 일정</caption>
+        <colgroup>
+            <!-- <col style="background-color: cadetblue;"> -->
+            <col class="bg"> <!-- 식별자로도 스타일 부여 가능 -->
+            <col>
+        </colgroup>
         <tr>
             <td>울산</td>
             <td>울산 vs 인천</td>

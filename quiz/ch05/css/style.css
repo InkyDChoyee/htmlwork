@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 65%;
+    margin: 50px 40px;
+    border: 2px solid #000;
+}
+
+#container {
+    margin: 50px;
+    line-height: 1.5;
+}
+
+p {
+    margin: 20px 0px;
+}
+
+.tile {
+    font-weight: bold;
+}
+
+ul li {
+    list-style: none;
+    margin-left: 40px;
+    line-height: 2;
+}
+
+label {
+    display: block;
+}
+
+label.info {
+    width: 70px;
+    float: left;
+}

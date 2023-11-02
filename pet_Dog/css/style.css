@@ -1,11 +1,13 @@
 /* index.html에 연결 */
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
 }
 
 #wrap {
-    width: 90%;
+    width: 1000px;
     margin: 0 auto;
 }
 
@@ -13,6 +15,20 @@ header {
     height: 60px;
     padding: 10px;
     background: #060;
+}
+
+header #logo {
+    width: 25%;
+    float: left;
+    line-height: 60px;
+}
+
+#logo h1 {
+    color: greenyellow;
+    padding-left: 16px;
+    font-style: italic;
+    font-family: 'Merienda', cursive;
+    font-weight: bold;
 }
 
 header nav {
@@ -69,8 +85,14 @@ section dl dd {
 
 aside {
     clear: both;
-    padding: 10px;
+    padding: 40px 20px;
     background: greenyellow;
+}
+
+aside img {
+    float: left;
+    margin: 10px 100px 10px 40px;
+    border-radius: 10px;
 }
 
 aside h3 {
@@ -79,6 +101,10 @@ aside h3 {
 
 aside ul li {
     margin: 10px 60px;
+}
+
+ul li a:hover {
+    color: greenyellow;
 }
 
 footer {

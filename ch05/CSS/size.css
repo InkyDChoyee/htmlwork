@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    /* width가 컨테이너와 같으면 생략 가능 */
+    /* width: 1000px; */
+    height: 100px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+section {
+    width: 650px;
+    height: 600px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    float: left;
+}
+
+aside {
+    width: 350px;
+    height: 600px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    float: right;
+}
+
+footer {
+    width: 1000px;
+    height: 100px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    clear: both;
+}

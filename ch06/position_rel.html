@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position: relative 속성</title>
+    <style>
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background: #99f;
+        }
+
+        .box2 {
+            width: 100px;
+            height: 100px;
+            background: #f99;
+            /* box1 기준 상대적 위치 */
+            position: relative;
+            top: -50px;
+            left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 형제 관계 = 대등 관계 -->
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>

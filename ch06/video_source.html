@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video - source 태그</title>
+</head>
+<body>
+    <!-- autoplay muted 사용하고, controls(플레이어) -->
+    <video src="./medias/flower.mp4" autoplay muted poster="./images/photo.jpg">
+        <!-- video 태그 타입을 지원하지 않을 때 source태그로 작동 가능 -->
+        <source src="./medias/flower.mp4" type="video/mp4">
+    </video>
+</body>
+</html>

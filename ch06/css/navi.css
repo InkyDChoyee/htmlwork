@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrap {
+    width: 960px;
+    margin: 0 auto;
+}
+
+nav {
+    height: 80px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    border-bottom: 2px solid #ccc;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 20px;
+}
+
+/* = ul li a { } */
+ul li a:link, a:visited {
+    text-decoration: none;
+    color: #222;
+    padding: 10px;
+}
+
+/* a:focus -> 클릭 이후 tab키 사용 가능 */
+ul li a:hover, a:focus {
+    background: #222;
+    color: #eee;
+}
+
+ul li a:active {
+    background: #f99;
+}

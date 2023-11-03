@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button태그의 onclick 속성</title>
+    <script>
+        function hello(){
+            alert("안녕하세요!")
+        }
+    </script>
+</head>
+<body>
+    <!-- alert() = 알림, 경고창 // confirm() = 확인,취소창 -->
+    <p>
+        <button type="button" onclick="alert('hello~')">클릭</button>
+    </p>
+    <p>
+        <!-- confirm()사용시 button type 생략 가능 -->
+        <button onclick="confirm('정말로 삭제하시겠습니까')">삭제</button>
+    </p>
+    <p>
+        <button onclick="window.open('https://www.naver.com')">네이버 바로가기</button>
+    </p>
+    <p>
+        <button onclick="window.open('https://www.naver.com', '네이버', 'width=200, height=300, top=150, left=200')">
+            네이버 탭</button>
+    </p>
+    <p>
+        <button onclick="hello()">버튼</button>
+    </p>
+</body>
+</html>

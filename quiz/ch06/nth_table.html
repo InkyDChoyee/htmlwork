@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표 만들고 스타일 넣기</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #wrap {
+            width:700px;
+            padding: 30px;
+            margin: 0 auto;
+        }
+        
+        table {
+            border: 1px solid #222;
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 1px solid #222;
+            width: 500px;
+        }
+
+        table tr td:nth-child(2n-1) {
+            text-align: center;
+            font-weight: bold;
+            background: #eee;
+            padding: 10px;
+            width: 200px;
+        }
+
+        input {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 15px;
+            margin: 0;
+            border: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <table>
+            <tr>
+                <td>이름</td>
+                <td>
+                    <input type="text">
+                </td>
+                <td>연락처</td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>주소</td>
+                <td colspan="3">
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>이메일</td>
+                <td colspan="3">
+                    <input type="text">
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition 속성</title>
+    <style>
+        .tr1 {
+            width: 200px;
+            height: 200px;
+            /* margin: 50px; */
+            position: absolute;
+            left: 100px;
+            top: 100px;
+            background: #99f;
+            /* transition 속성 - 시간(s-second) : 1s(1초) */
+            /* transition-property: width;
+            transition-duration: 1s; */
+            transition: width, height, 1s 5s;
+        }
+
+        .tr1:hover {
+            /* 1초 후 변경된 크기 */
+            width: 600px;
+            height: 600px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="tr1"></div>
+</body>
+</html>

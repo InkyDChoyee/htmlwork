@@ -20,7 +20,7 @@ header {
     font-family: 'Merienda', cursive;
 }
 
-#logo h1 a {
+#logo h1 {
     padding-left: 20px;
     color: #9f1;
     font-style: italic;
@@ -35,14 +35,11 @@ header nav {
 #topMenu {
     height: 100px;
     line-height: 60px;
-    float: right;
-    margin-right: 40px;
 }
 
 #topMenu > li {
     float: left;
     position: relative;
-    width: 180px;
 }
 
 #topMenu > li > a {
@@ -62,7 +59,7 @@ header nav {
     display: none;
     background: rgba(205, 255, 93, 0.6);
     position: absolute;
-    width: 180px;
+    width: 160px;
 }
 
 
@@ -83,72 +80,4 @@ header nav {
 
 #topMenu > li > ul > li > a:hover {
     color: #f99
-}
-
-main {
-    height: 600px;
-    padding: 6px;
-    border: 5px solid #ccc;
-}
-
-main h1 {
-    margin: 100px 20px 20px 20px;
-    text-align: center;
-}
-
-section {
-    float: left;
-    width: 30%;  /* mian 크기의 31% */
-    height: 520px;
-    border: 1px dotted #ccc;
-    margin: 5px;
-    padding: 5px;
-}
-
-section h3 {
-    padding: 16px 32px;
-    background: url(../images/dot.png) no-repeat;
-    background-position: 12px 24px;  /* x좌표, y좌표 */
-}
-
-section dl dt {
-    font-weight: bold;
-}
-
-section dl dd {
-    margin-bottom: 16px;
-}
-
-aside {
-    clear: both;
-    padding: 40px 20px;
-    background: greenyellow;
-}
-
-aside img {
-    float: left;
-    margin: 10px 100px 10px 40px;
-    border-radius: 10px;
-}
-
-aside h3 {
-    padding-left: 30px;
-}
-
-aside ul li {
-    margin: 10px 60px;
-}
-
-ul li a:hover {
-    color: greenyellow;
-}
-
-footer {
-    padding: 20px 10px;
-    background: #555;
-}
-
-footer p {
-    text-align: center;
-    color: #fdd;
 }

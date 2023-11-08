@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+* {margin: 0; padding: 0;}
+body {
+    background: #005;
+}
+
+
+/* 모바일 기준 */
+#container {
+    width: 300px;
+    margin: 0 auto;
+}
+
+#container .card {
+    width: 300px;
+    height: 500px;
+    margin: 20px;
+    background: #fff;
+    position: relative;
+}
+
+.card .word {
+    /* padding: 40px 20px; */
+    position: absolute;
+    top: 275px;
+    padding: 20px;
+}
+
+.card .word h3 {
+    text-align: right;
+    padding: 10px;
+}
+
+/* 태블릿 기준 */
+@media screen and (min-width: 780px) {
+    #container {
+        width: 570px;  /* margin 포함 크기 */
+    }
+
+    #container .card {
+        width: 550px;
+        height: 250px;
+    }
+
+    .card .word {
+        position: absolute;
+        top: 20px;
+        left: 310px;
+    }
+}
+
+
+/* PC 기준 */
+@media screen and (min-width: 1710px) {
+    #container {
+        width: 1800px;  /* margin 포함 크기 */
+    }
+    
+    #container .card {
+        float: left;
+    }
+}

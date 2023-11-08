@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미디어 쿼리 예제</title>
+    <style>
+        /* 가로의 크기가 800px 이상이면 숨기고 미만이면 보이기 */
+        div {
+            width: 90%;   /* % = 가변크기 */
+            margin: 0 auto;
+            padding: 20px;
+            border: 10px solid #ccc;
+            display: block;
+        }
+        @media screen and (min-width: 800px) {
+            div {
+                display: none;
+            }
+        }
+
+        /* 가로의 크기가 800px 이하이면 보이고 초과면 숨기기 */
+        /* div {
+            width: 90%;   % = 가변크기
+            margin: 0 auto;
+            padding: 20px;
+            border: 10px solid #ccc;
+            display: none;
+        }
+        @media screen and (min-width: 800px) {
+            div {
+                display: block;
+            }
+        } */
+    </style>
+</head>
+<body>
+    <div>반응형 웹(Responsive Web)</div>
+</body>
+</html>

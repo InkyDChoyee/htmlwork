@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation 속성</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background: #99f;
+            border: 2px solid #ccc;
+            box-sizing: border-box;
+            margin: 60px;
+
+            /* 애니메이션 이름 선언 */
+            /* animation-name: change_bg; */
+            /* 애니메이션 재생 시간 */
+            /* animation-duration: 3s; */
+
+            /* 반복 횟수 */
+            /* animation-iteration-count: 4; */
+            /* animation-iteration-count: infinite;  무한반복 */
+
+            animation: change_bg 3s infinite;
+        }
+        @keyframes change_bg {
+            from{
+                background: #99f;
+                border-radius: 0;
+            }
+            to{
+                background: #f9f;
+                border-radius: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

@@ -1,0 +1,335 @@
+@charset "utf-8";
+
+/* 공통 스타일 */
+* {margin: 0; padding: 0; box-sizing: border-box;
+}
+
+/* 모바일 버전 */
+body {
+    width: 100%;
+    padding: 0;
+}
+
+/* header 영역 */
+header {
+    width: 100%;
+    height: 260px;
+    text-align: center;
+    background: #333;
+}
+
+.head_nav {
+    width: 100%;
+    height: 100%;
+}
+.logo{
+    float: left;
+    color: aqua;
+    margin: 10px;
+}
+.head_menu {
+    display: inline-block;
+    height: 60px;
+}
+.head_menu li{
+    display: inline-block;
+    margin: 0 20px;
+    padding: 16px 0;
+}
+.head_menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.bg_pic img {
+    width: 100%;
+    height: 200px;
+}
+
+/* section 영역 */
+section {
+    border-top: 2px solid #eee;
+    padding: 20px 40px 70px;
+    line-height: 1.5;
+    height: 350px;
+}
+
+.myPic {display: none;}
+.frontend_pic {display: none;}
+.frontend_pic2 {display: none;}
+
+.object {
+    color: #23d;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+section h1 {padding-bottom: 20px ;}
+
+#about {padding-top: 20px;}
+
+#about h3 {
+    margin: 0 20px 20px 10px;
+    color: #45f;
+}
+
+#about li {
+    list-style: none inside;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    background: #9cf;
+    width: 220px;
+    margin: 5px;
+    padding: 5px 5px 5px 10px;    
+}
+#doing li {list-style: inside;}
+#done li {list-style: square inside;}
+
+#ToDoList {
+    text-decoration: none;
+    color: #000;
+}
+
+section:nth-child(2n){background: #eff;}
+
+#time {
+    float: right;
+    padding-top: 80px;
+    line-height: 3;
+    font-style: italic;
+    font-size: 12px;
+    font-weight: bold;
+    color: #4af;
+}
+#show {font-size: 16px;}
+
+/* bottom 영역 */
+#bottom {
+    background: #eee;
+    padding: 20px;
+    margin-top: 60px;
+    border-top: 2px solid #000;
+}
+.bottom_tag {
+    display: inline-block;
+}
+#bottom ul{
+    text-align: center;
+    list-style: none;
+}
+#bottom ul li, .email {
+    padding: 0 20px;
+    display: inline-block;
+}
+.bottom_tag li{
+    border-right: 1px solid #aaa;
+}
+
+
+/* 태블릿 기준 - 780px 이상 */
+@media (min-width: 780px) {
+    #wrap {font-size: 1.25rem;}   /* 모바일 버전의 글씨 크기보다 약간 크게 설정 */
+
+    /* header 영역 */
+    header {height: 330px;}
+
+    .bg_pic img {
+        width: 100%;
+        height: 270px;
+    }
+
+    /* section 영역 */
+    section {height: 400px;}
+    
+    #about {
+        padding-top: 20px;
+        display: block;
+    }
+
+    .object {
+        font-size: 2rem;
+    }
+
+    #about li {
+        list-style: none inside;
+        border: 1px solid #eee;
+        border-radius: 10px;
+        background: #9cf;
+        width: 300px;
+        margin: 10px;
+        padding: 5px 5px 5px 10px;    
+    }
+
+    #doing {
+        float: left;
+        width: 50%;
+    }
+
+    #doing .skill li {
+        list-style: none;
+    }
+
+    .skill {
+        margin: 30px 10px 10px 100px;
+    }
+    
+    .skill li {
+        border: 1px solid #eef;
+        width: 200px;
+        text-align: center;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .JAVA {
+        background-color: #fff;
+        transform: rotate(-5deg);
+    }
+    .SQL {
+        background-color: #d9d;
+        transform: rotate(5deg);
+    }
+    .HTML {
+        background-color: #f99;
+        transform: rotate(-3deg);
+    }
+    .CSS {
+        background-color: #99f;
+    }
+    .JS {
+        background-color: #fd9;
+        transform: rotate(10deg);
+    }
+
+
+    #done {
+        display: inline-block;
+        width: 50%;
+        background: #eef;
+    }
+
+    .frontend_pic {
+        display: block;
+        float: right;
+    }
+    .frontPic {
+        width: 300px;
+        height: 200px;
+    }
+    .frontend_pic2 {display: none;}
+}
+
+/* PC 기준 - 1200px 이상 */
+@media (min-width: 1200px) {
+    #wrap{
+        width: 1200px;
+        margin: 0 auto;
+        font-size: 1.5rem;
+    }
+
+    /* header 영역 */
+    header {height: 390px;}
+
+    .bg_pic img {
+        width: 100%;
+        height: 330px;
+    }
+
+    /* section 영역 */
+    section {
+        height: 430px;
+        display: inline-block;
+    }
+
+    .object {
+        font-size: 2.3rem;
+    }
+
+    #about h3 {
+        margin-bottom: 0px;
+    }
+
+    #about ul {
+        float: left;
+    }
+
+    #about li {
+        list-style: none inside;
+        border: 1px solid #eee;
+        border-radius: 10px;
+        background: #9cf;
+        width: 350px;
+        margin: 10px;
+        padding: 7px 7px 7px 15px;
+           
+    }
+
+    .myPic {display: block;}
+
+    #myPic {
+        width: 230px;
+        height: 300px;
+        float: left;
+        padding-top: 10px;
+        margin-right: 60px;
+    }
+
+    #doing, #done {
+        width: 100%;
+        position: relative;
+    }
+
+    #doing .skill li {
+        list-style: none;
+    }
+
+    .skill {
+        margin: 30px 10px 10px 100px;
+    }
+    
+    .skill li {
+        border: 1px solid #eef;
+        width: 200px;
+        text-align: center;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .JAVA {
+        background-color: #fff;
+        transform: rotate(-5deg);
+    }
+    .SQL {
+        background-color: #d9d;
+        transform: rotate(5deg);
+    }
+    .HTML {
+        background-color: #f99;
+        transform: rotate(-3deg);
+    }
+    .CSS {
+        background-color: #99f;
+    }
+    .JS {
+        background-color: #fd9;
+        transform: rotate(10deg);
+    }
+
+    #done li {
+        list-style: none;
+        line-height: 2;
+    }
+
+    .frontend_pic {display: none;}
+    .frontend_pic2 {display: block;}
+
+    .frontPic2 {
+        width: 500px;
+        height: 300px;
+        position: absolute;
+        top: 250px;
+        z-index: 10;   /* z-index를 사용하여 겹쳐진 요소들 중 제일 위로 올림 */
+        margin-left: 600px;
+        border: 1px dotted #999;
+    }
+}

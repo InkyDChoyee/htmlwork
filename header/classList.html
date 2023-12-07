@@ -18,6 +18,7 @@
     <h2>ClassList 속성</h2>
     
     <button onclick="classAdd()">Add</button>
+    <button onclick="classRemove()">remove</button>
     <div id="myDiv">
         <p>오늘도 좋은 하루 되세요~</p>
     </div>
@@ -26,6 +27,10 @@
         function classAdd() {
             let list = document.querySelector("#myDiv").classList;
             list.add("myStyle");   // 이름이 myStyle 클래스 추가
+        }
+        function classRemove() {
+            let list = document.querySelector("#myDiv").classList;
+            list.remove("myStyle");   // 이름이 myStyle 클래스 추가
         }
 
     </script>

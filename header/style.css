@@ -47,6 +47,11 @@ a{
         width: 100%;
         display: none;
     }
+    .navbar_menu.active {
+        display: flex;
+    }
+
+
     .navbar_toggleBtn {
         display: block;
     }

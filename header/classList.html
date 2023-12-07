@@ -19,6 +19,7 @@
     
     <button onclick="classAdd()">Add</button>
     <button onclick="classRemove()">remove</button>
+    <button onclick="classToggle()">toggle</button>
     <div id="myDiv">
         <p>오늘도 좋은 하루 되세요~</p>
     </div>
@@ -31,6 +32,10 @@
         function classRemove() {
             let list = document.querySelector("#myDiv").classList;
             list.remove("myStyle");   // 이름이 myStyle 클래스 추가
+        }
+        function classToggle() {
+            let list = document.querySelector("#myDiv").classList;
+            list.toggle("myStyle");   // 이름이 myStyle 클래스 추가
         }
 
     </script>

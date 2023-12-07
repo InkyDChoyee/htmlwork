@@ -12,6 +12,13 @@ $(function(){
     // toggle() - show()/hide()
     $(".navbar_toggleBtn").click(function(){
         $(".navbar_menu").toggle("active");
+    });
+
+    // pc기준에서 상단메뉴가 보이지 않을 때 처리
+    $(window).resize(function(){
+        if(parseInt($("nav").css("width")) > 768){
+            $(".navbar_menu").css("display", "flex");
+        }
     })
 
 });

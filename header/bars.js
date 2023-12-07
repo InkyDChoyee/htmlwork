@@ -9,7 +9,7 @@
 // 제이쿼리로 구현
 $(function(){
     // alert("test");
-    // toggle() - show()/hide()
+    // toggle() - 애니메이션기능
     $(".navbar_toggleBtn").click(function(){
         $(".navbar_menu").toggle("active");
     });
@@ -18,6 +18,8 @@ $(function(){
     $(window).resize(function(){
         if(parseInt($("nav").css("width")) > 768){
             $(".navbar_menu").css("display", "flex");
+        }else {
+            $(".navbar_menu").css("display", "none");
         }
     })
 
